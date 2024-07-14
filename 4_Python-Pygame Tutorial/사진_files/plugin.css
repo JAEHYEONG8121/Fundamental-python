@@ -1,0 +1,88 @@
+/* banner script */
+#page-wrap { width: 300px; margin: 0px auto; }
+
+.slide-up-boxes a { 
+			display: block; 
+			height: 100px; 
+			margin: 0 0 10px 0; 
+			background: #efefef; 
+			border: 1px solid #ccc; 
+			height: 65px; 
+			overflow: hidden; 
+		}
+		
+		.slide-up-boxes h5 { 
+			color: #333; 
+			text-align: left;
+			height: 65px; 
+			padding-left:20px;
+			font: 18px/65px Nanum Gothic;    /* Vertically center text by making line height equal to height */
+			 opacity: 1;
+			 -webkit-transition: all 0.2s linear; 
+			 -moz-transition: all 0.2s linear; 
+			 -o-transition: all 0.2s linear;
+		}
+		
+		.slide-up-boxes a:hover h5 { 
+			margin-top: -65px; 
+			opacity: 0; 
+		}
+		
+		.slide-up-boxes div { 
+			position: relative; 
+			color: white; 
+			font: 12px/15px ;
+			height: 100px; 
+			padding: 5px; 
+			opacity: 0; 
+			-webkit-transform: rotate(6deg); 
+			-webkit-transition: all 0.4s linear; 
+			-moz-transform: rotate(6deg); 
+			-moz-transition: all 0.4s linear; 
+			-o-transform: rotate(6deg); 
+			-o-transition: all 0.4s linear; 
+		}
+		.slide-up-boxes a:hover div { 
+			opacity: 1; 
+			-webkit-transform: rotate(0); 
+			-moz-transform: rotate(0); 
+			-o-transform: rotate(0); 
+		}
+		.slide-up-boxes a:nth-child(1) div { background: #c73b1b url(images/wufoo.png) 17px 17px no-repeat; padding-left: 100px; }
+		.slide-up-boxes a:nth-child(2) div { background: #367db2 url(images/diw.png) 21px 10px no-repeat; padding-left: 100px; }
+		.slide-up-boxes a:nth-child(3) div { background: #393838 url(images/qod.png) 14px 16px no-repeat; padding-left: 100px; }
+
+
+
+/* top script */
+#toTop {
+	display:none;
+	text-decoration:none;
+	text-indent:-10000px; 
+	position: fixed;
+	margin-right: auto;
+    margin-left: auto;
+	bottom:50px;
+	right:100px;
+	overflow:hidden;
+	width:72px;
+	height:72px;
+	border:none;
+	background:url(/image/ui.totop.png) no-repeat 0 -72px;
+}
+
+#toTopHover {
+	background:url(/image/ui.totop.png) no-repeat 0 0px;
+	width:72px;
+	height:72px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}

@@ -1,0 +1,13 @@
+텍스트 관련 변수
+
+내용 위치 글자체 크기 색깔
+
+1. 폰트 설정
+    font = pygame.font.Font(address, size)
+
+2. Surface 생성 (텍스트의 이미지화)
+    text = font.render(contents.True.color)
+
+3. Surface 화면에 표시
+    screen.blit(text.position)
+

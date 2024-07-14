@@ -1,0 +1,23 @@
+				function login() {
+					alert('로그인 후 이용하실 수 있습니다.');
+				}
+			
+				var errThumb = 'http://ftp.gameshot.net/v4/member/no_images.gif';
+				var errThumbg = 'http://ftp.gameshot.net/v4/image/no_sum.png';
+
+
+				/* popup center */
+				  function opencenter(winNM,width,height)
+						{
+						var sw=screen.availWidth;                           
+						var sh=screen.availHeight;                          
+						 
+						var px=(sw-width)/2;
+						var py=(sh-height)/2;
+						 
+						var set='top='+py+',left='+px;
+						set+=',width='+width+',height='+height+
+						',toobar=0,resizable=0,status=0,scrollbars=10';
+						 
+						window.open(winNM,'',set);
+					}

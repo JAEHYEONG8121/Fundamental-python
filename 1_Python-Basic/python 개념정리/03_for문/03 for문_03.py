@@ -1,0 +1,5 @@
+for i in range(0, 11, 1) :
+    if i % 2 == 0 :
+        print('i=', i, ':값 확인')
+
+print('다음 문장')
